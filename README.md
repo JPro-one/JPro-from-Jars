@@ -1,23 +1,23 @@
 # JPro from Jars
 
-This project helps you to use [JPro](https://jpro.one/), when you have the Jars of your application.
+This project helps you to use [JPro](https://jpro.one/), when you have only the Jars of your application.
 
-This can be useful, when you are using neither Maven nor Gradle.
+This might be useful for those developer, who use their IDE directly, and don't want to convert their original project into a Maven or Gradle project.
 
 ## How to use:
 
 ### Step1
-Put your Jars into the folder "libs".
+Put your Jars into the folder `./libs`.
 
-It can be either a single fat-jar, or your application and it's libraries.
+It can be either a single fat jar, or the jars of your application with it's libraries.
 
 ### Step2
-Change the mainclass in the file `gradle.properties``
+Change the main class in the file `gradle.properties`
 
 ### Step3
 On Mac/Linux, run the following command: `./gradlew jproRun`.
 
-On Windows, run the following command: `gradlew.bat jproRun`.
+On Windows, run the following command: `./gradlew.bat jproRun`.
 
 After some time, the browser should open automatically.
 
@@ -25,8 +25,8 @@ After some time, the browser should open automatically.
 # Additional Notes
 * Take a look at our [documentation](https://www.jpro.one/?page=docs/current/1.1/), for further information. 
 * This project is based on [HelloJPro](https://github.com/jpro-one/HelloJPro)
-* Technically, this is a simple gradle-project using JPro. You can configure this project, like any other JPro project.
-* If you want to use multipl mainclasses, you can add the file `src/main/resources/jpro.conf` and add multiple mainclasses.
+* Technically, this is a simple gradle project using JPro. You can configure this project, like any other JPro project.
+* If you want to use multiple main classes, you can add the file `src/main/resources/jpro.conf` and add multiple main classes. [Take a look at our documentation.](https://www.jpro.one/?page=docs/current/2.2/CONFIGURING_JPRO)
 
 
 
