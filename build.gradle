@@ -1,0 +1,64 @@
+
+/**
+ ******************  Script Configuration ******************
+ */
+buildscript {
+  repositories {
+    jcenter()
+
+    maven {
+      url "http://sandec.bintray.com/repo"
+    }
+  }
+
+  dependencies {
+    classpath "com.sandec.jpro:jpro-plugin-gradle:$JPRO_VERSION"
+  }
+}
+
+
+/**
+ ******************  Java Configuration ******************
+ */
+apply plugin: 'java'
+apply plugin: 'application'
+
+compileJava {
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+/**
+ ******************  jpro Configuration ******************
+ */
+apply plugin: 'com.sandec.jpro'
+
+
+/**
+ * App Main Class
+ */
+mainClassName = "$MAINCLASS"
+
+/**
+ * jpro settings
+ */
+jpro {
+  // for debugging
+  // JVMArgs << '-agentlib:jdwp=transport=dt_socket,server=n,address=5006,suspend=y'
+
+  JVMArgs << '-Xmx1000m'
+
+  //jpro server port
+  port = 8080
+
+  //jpro version (optional)
+  jproVersion = "$JPRO_VERSION"
+}
