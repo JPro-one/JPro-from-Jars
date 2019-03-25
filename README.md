@@ -1,6 +1,7 @@
 # JPro from Jars
 
 This project helps you to use [JPro](https://jpro.one/), when you have the Jars of your application.
+
 This can be useful, when you are using neither Maven nor Gradle.
 
 ## How to use:
@@ -15,15 +16,17 @@ Change the mainclass in the file `gradle.properties``
 
 ### Step3
 On Mac/Linux, run the following command: `./gradlew jproRun`.
+
 On Windows, run the following command: `gradlew.bat jproRun`.
 
 After some time, the browser should open automatically.
 
 
 # Additional Notes
-* Take a look at our documentation, for further information: https://www.jpro.one/?page=docs/current/1.1/
-* This project is based on [HelloJPro](https://github.com/jpro-one/HelloJPro): 
-
+* Take a look at our [documentation](https://www.jpro.one/?page=docs/current/1.1/), for further information. 
+* This project is based on [HelloJPro](https://github.com/jpro-one/HelloJPro)
+* Technically, this is a simple gradle-project using JPro. You can configure this project, like any other JPro project.
+* If you want to use multipl mainclasses, you can add the file `src/main/resources/jpro.conf` and add multiple mainclasses.
 
 
 
