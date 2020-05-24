@@ -1,6 +1,6 @@
 # JPro from Jars
 
-[![Build Status](https://travis-ci.org/JPro-one/jpro-from-jars.svg?branch=master)](https://travis-ci.org/jpro-one/jpro-from-jars)
+[![Build Status](https://travis-ci.com/JPro-one/jpro-from-jars.svg?branch=master)](https://travis-ci.com/jpro-one/jpro-from-jars)
 
 This project helps you to use [JPro](https://jpro.one/), when you have only the Jars of your application.
 
