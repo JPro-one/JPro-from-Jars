@@ -1,5 +1,7 @@
 # JPro from Jars
 
+[![Build Status](https://travis-ci.org/JPro-one/jpro-from-jars.svg?branch=master)](https://travis-ci.org/jpro-one/jpro-from-jars)
+
 This project helps you to use [JPro](https://jpro.one/), when you have only the Jars of your application.
 
 This might be useful for those developer, who use their IDE directly, and don't want to convert their original project into a Maven or Gradle project.
